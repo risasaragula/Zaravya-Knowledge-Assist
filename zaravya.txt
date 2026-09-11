@@ -1,0 +1,416 @@
+ZARAVYA — COMPANY & PRODUCT KNOWLEDGE BASE
+Organization: Zaravya
+Primary Product Covered: ChefDesk
+Additional Product: HR Suite by Zaravya
+________________________________________
+ ZARAVYA AND ITS PRODUCT ECOSYSTEM
+1. Introduction
+Zaravya is associated with software products designed to help businesses manage operational processes through connected digital systems.
+One of the company's major products is ChefDesk, a restaurant management and POS platform designed for food businesses.
+ChefDesk brings together restaurant operations such as:
+•	Billing
+•	Point of Sale (POS)
+•	Order management
+•	Kitchen operations
+•	Inventory
+•	Purchasing
+•	Customer relationship management
+•	Loyalty
+•	Analytics
+•	Accounting-related workflows
+•	Multi-outlet management
+ChefDesk describes itself as cloud restaurant software for cafes, QSRs, fine-dining businesses and restaurant chains. Its public product information also describes integrations with platforms including Swiggy, Zomato and WhatsApp. 
+2. Main Business Areas
+The ChefDesk platform covers several major operational areas:
+Front Office
+Front-office functionality includes billing, table management, order taking, QR ordering and other customer-facing restaurant processes.
+Kitchen
+Kitchen functionality includes KOT management, kitchen display systems, station routing and preparation monitoring.
+Inventory
+Inventory functionality connects recipes and sales with ingredient consumption, purchasing, stock transfers and wastage.
+Customer Management
+CRM capabilities include customer profiles, loyalty programs, campaigns and customer engagement.
+Finance
+The platform provides GST-ready outputs and integrations with accounting systems such as Tally, Zoho Books and Odoo. 
+3. Businesses That Can Use ChefDesk
+ChefDesk publicly lists support for multiple food-business formats, including:
+•	Fine-dining restaurants
+•	Cafes
+•	Bakeries
+•	QSRs
+•	Bars and pubs
+•	Food trucks
+•	Food courts
+•	Ice cream shops
+•	Theme parks
+•	Multi-outlet restaurant chains
+The platform is designed to support both individual outlets and multi-location businesses. 
+________________________________________
+CHEFDESK POS AND BILLING
+1. What Is POS?
+POS stands for Point of Sale.
+A POS system is the software used to record customer orders, calculate bills and process payments.
+In a restaurant, the POS can connect the order-taking process with billing, kitchen operations and other systems.
+2. ChefDesk POS
+ChefDesk provides restaurant POS functionality for dine-in, takeaway and delivery operations.
+The system supports:
+•	Counter billing
+•	Tableside billing
+•	Order management
+•	Multiple payment methods
+•	Split billing
+•	KOT management
+•	Table management
+•	Modifiers and variants
+•	QR ordering
+•	Self-service ordering
+•	Token management
+ChefDesk describes its POS as touch-optimized and designed for restaurant operations. 
+3. Payment Methods
+ChefDesk supports payment methods such as:
+•	Cash
+•	Cards
+•	UPI
+•	Wallets
+•	Split payments
+Payment integrations allow restaurants to connect transactions with the broader billing process. 
+4. GST Billing
+ChefDesk provides GST-ready billing functionality.
+The platform supports:
+•	GST calculations
+•	GST invoices
+•	HSN information
+•	Item-wise GST rates
+•	GST-related reports
+This is particularly relevant for restaurants operating in India. 
+5. Offline Operation
+ChefDesk supports offline operation.
+If the internet connection becomes unavailable, billing can continue locally. Once connectivity is restored, the data can synchronize with the cloud.
+This is useful for restaurants because billing does not necessarily have to stop when there is a temporary internet outage. 
+6. Example RAG Questions
+A RAG system using this document should be able to answer:
+Question: What is POS?
+Answer: POS means Point of Sale. It is the system used to manage restaurant orders, billing and payments.
+Question: Does ChefDesk support UPI?
+Answer: Yes. ChefDesk supports UPI along with cash, cards, wallets and split payments.
+________________________________________
+KITCHEN OPERATIONS
+1. Kitchen Order Tickets
+A KOT, or Kitchen Order Ticket, communicates customer orders to the kitchen.
+Instead of restaurant staff verbally communicating every order, the POS can send order information to the appropriate kitchen station.
+ChefDesk supports KOT management and kitchen routing. 
+2. Kitchen Display System
+A Kitchen Display System (KDS) is a digital system that displays orders to kitchen staff.
+ChefDesk's KDS functionality can provide:
+•	Real-time order display
+•	Kitchen station routing
+•	Item readiness
+•	Preparation timers
+•	Delay alerts
+•	Batch preparation views
+The objective is to help restaurant staff understand what needs to be prepared and where each order should be processed. 
+3. Station Routing
+Different restaurants may have different kitchen stations.
+For example:
+•	Grill
+•	Bakery
+•	Beverage
+•	Main kitchen
+•	Dessert
+ChefDesk can route relevant items to appropriate stations.
+This helps prevent kitchen staff from having to manually identify which items belong to their station.
+4. KOT and KDS Difference
+KOT: A kitchen order ticket communicates what has been ordered.
+KDS: A kitchen display system digitally displays and manages those orders.
+5. Example
+A customer orders:
+•	Chicken Biryani
+•	Coke
+•	Gulab Jamun
+The restaurant's system can route the relevant items to the appropriate kitchen or preparation stations.
+The kitchen can then see the order and track preparation.
+6. RAG Test Questions
+A RAG system should answer questions such as:
+•	What does KOT mean?
+•	What is a KDS?
+•	How does ChefDesk route kitchen orders?
+•	What is station routing?
+•	Can ChefDesk track preparation?
+•	What happens to orders after they are placed?
+________________________________________
+INVENTORY AND FOOD COST MANAGEMENT
+1. Inventory Management
+Restaurant inventory includes ingredients, raw materials, packaging materials and other items required to operate the business.
+ChefDesk provides inventory management functionality designed to connect restaurant sales with ingredient consumption. 
+2. Recipe-Linked Inventory
+ChefDesk can connect recipes with inventory ingredients.
+For example, imagine a restaurant has a recipe for biryani containing:
+•	Rice
+•	Chicken
+•	Oil
+•	Spices
+When the restaurant sells the dish, the corresponding ingredients can be deducted according to the configured recipe.
+This helps restaurants understand theoretical ingredient consumption.
+3. Stock Tracking
+The system provides real-time stock tracking and can provide low-stock alerts.
+Restaurants can configure minimum stock levels and monitor ingredient availability. 
+4. Purchasing
+Inventory functionality also covers procurement activities.
+Features include:
+•	Purchase orders
+•	Goods Receipt Notes (GRN)
+•	Vendor management
+•	Vendor price history
+•	Purchase returns
+•	Stock transfers
+5. Wastage
+Food wastage can affect restaurant profitability.
+ChefDesk allows wastage to be recorded according to reason and analyzed as part of inventory management.
+Possible wastage reasons could include:
+•	Spoilage
+•	Preparation waste
+•	Overproduction
+•	Damaged stock
+6. Food Cost
+Food cost represents the cost associated with ingredients used to produce menu items.
+Recipe-linked inventory allows restaurants to calculate food costs and identify differences between expected and actual consumption.
+7. RAG Questions
+Examples:
+How does ChefDesk manage inventory?
+How does recipe-linked inventory work?
+Can ChefDesk track wastage?
+What is GRN?
+Can restaurants monitor vendor prices?
+CRM, LOYALTY AND CUSTOMER ENGAGEMENT
+1. Restaurant CRM
+CRM stands for Customer Relationship Management.
+A restaurant CRM stores and uses customer information to help businesses build relationships with guests.
+ChefDesk's CRM functionality includes customer database management, loyalty, campaigns, feedback and customer engagement. 
+2. Customer Profiles
+Customer information can be combined into a unified guest profile.
+The system can bring together interactions from different channels such as:
+•	Restaurant bills
+•	Online orders
+•	Reservations
+•	WhatsApp interactions
+•	Feedback
+3. Loyalty Programs
+ChefDesk supports loyalty features including:
+•	Loyalty points
+•	Loyalty tiers
+•	Rewards
+•	Vouchers
+•	Coupons
+•	Referrals
+Restaurants can use these features to encourage repeat visits.
+4. Customer Campaigns
+ChefDesk supports customer engagement through channels including:
+•	WhatsApp
+•	SMS
+•	Email
+Campaigns can be used for promotions, customer engagement and retention. 
+5. Birthday and Anniversary Offers
+Restaurants can create customer campaigns related to birthdays and anniversaries.
+For example, a restaurant could send a special offer to eligible customers around their birthday.
+6. Customer Segmentation
+Customer segmentation allows businesses to group customers based on characteristics or behavior.
+For example:
+Customers who ordered biryani multiple times during the last month.
+A restaurant could use such a segment for a targeted campaign.
+7. RAG Questions
+What is ChefDesk CRM?
+What loyalty features are available?
+Can ChefDesk send WhatsApp campaigns?
+Can customers earn loyalty points?
+How can restaurants use customer segmentation?
+________________________________________
+SWIGGY, ZOMATO AND ONLINE ORDERING
+1. Delivery Platforms
+Restaurant orders can come from multiple sources.
+Examples include:
+•	Dine-in
+•	Takeaway
+•	Restaurant website
+•	QR ordering
+•	WhatsApp
+•	Swiggy
+•	Zomato
+ChefDesk provides integrations designed to bring these channels into restaurant operations.
+2. Swiggy and Zomato Integration
+ChefDesk describes native integration with Swiggy and Zomato.
+The integration can allow:
+•	Menu synchronization
+•	Price synchronization
+•	Modifier synchronization
+•	Order ingestion
+•	KDS routing
+•	Sold-out synchronization
+•	Payout reconciliation
+This reduces the need for restaurant employees to manually enter aggregator orders. 
+3. Order Flow
+A simplified order flow is:
+Customer
+↓
+Swiggy/Zomato
+↓
+ChefDesk
+↓
+POS
+↓
+Kitchen
+↓
+KDS/KOT
+This gives restaurant staff a centralized operational workflow.
+4. Sold-Out Items
+If a restaurant has limited stock of an item, availability can be important across online ordering channels.
+ChefDesk describes functionality for synchronizing sold-out states with delivery platforms. 
+5. Payout Reconciliation
+A restaurant receives payouts from delivery platforms.
+The amount received may need to be compared against:
+•	Original order value
+•	Commission
+•	Promotions
+•	Adjustments
+•	Taxes
+•	Other deductions
+ChefDesk provides payout reconciliation functionality for aggregator transactions. 
+6. RAG Questions
+Does ChefDesk integrate with Swiggy?
+Does ChefDesk integrate with Zomato?
+How are online orders handled?
+What is payout reconciliation?
+Can sold-out items be synchronized?
+________________________________________
+MULTI-OUTLET AND RESTAURANT MANAGEMENT
+1. Multi-Outlet Operations
+Restaurants with multiple branches need centralized visibility.
+ChefDesk provides functionality for multi-outlet operations, including centralized menu control, outlet-level settings and consolidated reporting. 
+2. Central Menu
+A restaurant chain can maintain a central menu.
+The business can control:
+•	Menu items
+•	Prices
+•	Modifiers
+•	Offers
+Individual outlets may also have specific overrides.
+3. Outlet-Level Access
+Different employees may need different access depending on their role and location.
+ChefDesk provides role-based access and outlet-level controls.
+4. Reporting
+Businesses can view information:
+•	Per outlet
+•	Across all outlets
+•	By sales
+•	By items
+•	By staff
+•	By operational metrics
+This allows management to compare locations.
+5. Franchise Operations
+ChefDesk also provides functionality for franchise and multi-tenant operations.
+The platform describes support for:
+•	Franchise reporting
+•	Royalty reporting
+•	Outlet controls
+•	Central menu management
+•	Inter-outlet transfers
+6. Central Kitchen
+A restaurant group may have a central kitchen supplying multiple outlets.
+ChefDesk's inventory functionality supports transfers between central kitchens and outlets. 
+7. RAG Questions
+Can ChefDesk manage multiple restaurants?
+Can a restaurant chain control menus centrally?
+Can reports be viewed outlet by outlet?
+Does ChefDesk support franchises?
+Can inventory move between outlets?
+________________________________________
+ACCOUNTING, FINANCE AND HR SUITE
+1. Accounting Integrations
+ChefDesk can connect restaurant operational information with accounting systems.
+Public product information lists integrations/support for:
+•	Tally
+•	Zoho Books
+•	Odoo
+The purpose is to reduce duplicate manual data entry between restaurant operations and accounting workflows.
+2. Financial Data
+Restaurant management generates information such as:
+•	Sales
+•	Purchases
+•	Vendor transactions
+•	GST-related information
+•	Outlet-level financial information
+ChefDesk provides data that can support downstream accounting processes.
+3. HR Suite
+HR Suite by Zaravya is a separate HR-focused product.
+Its public interface describes capabilities around HR automation, attendance and payroll. (hrsuite.zaravya.com)
+The ChefDesk restaurant-management documentation also describes HR Suite by Zaravya for:
+•	Attendance
+•	Shift rosters
+•	Payroll
+•	Employee records
+
+4. HR Automation
+HR Suite is designed to help HR teams manage employee-related processes through a digital system.
+The publicly accessible HR Suite interface describes:
+•	Organization setup
+•	Employee management
+•	Attendance
+•	Leave
+•	Payroll readiness
+5. Relationship Between ChefDesk and HR Suite
+ChefDesk focuses primarily on restaurant operations.
+HR Suite focuses on employee and HR processes.
+For restaurant businesses, the systems can work together around workforce-related information.
+6. RAG Questions
+What accounting systems can ChefDesk integrate with?
+What is HR Suite by Zaravya?
+What does HR Suite manage?
+Does ChefDesk support employee attendance?
+What is the purpose of accounting integration?
+________________________________________
+ANALYTICS, REPORTING AND SECURITY
+1. Analytics
+Restaurant businesses generate large amounts of operational data.
+ChefDesk provides analytics and reporting capabilities around areas such as:
+•	Sales
+•	Inventory
+•	Staff performance
+•	Customer behavior
+•	Outlet performance
+•	Food cost
+The platform describes dashboards for real-time business information. 
+2. Sales Reports
+Restaurant owners can analyze sales based on different dimensions.
+Examples include:
+•	Sales by item
+•	Sales by hour
+•	Sales by staff
+•	Sales by outlet
+3. Best-Selling Items
+Restaurants can identify products that sell frequently.
+This can help management make decisions around:
+•	Menu design
+•	Stock planning
+•	Promotions
+•	Pricing
+4. Food Cost Variance
+A restaurant can compare expected ingredient consumption with actual consumption.
+A difference may indicate:
+•	Wastage
+•	Over-portioning
+•	Incorrect recipe configuration
+•	Stock issues
+5. Audit and Controls
+ChefDesk describes audit-related controls around activities such as:
+•	Discounts
+•	Voids
+•	Cancellations
+•	Waivers
+•	Write-offs
+•	Purchase approvals
+The system also describes user-level authorization and audit trails. 
+6. WhatsApp Approvals
+ChefDesk describes WhatsApp OTP authorization for selected operations and alerts.
+This can provide an additional approval mechanism for certain restaurant activities. 
+7. Cloud and Offline Architecture
+ChefDesk describes cloud synchronization where sales, KOT and payment information can reach the cloud in near real time.
+It also supports offline operation where local billing can continue and synchronize after connectivity returns. 
