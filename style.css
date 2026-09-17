@@ -28,7 +28,7 @@ body {
     color: white;
     border: none;
     border-radius: 6px;
-   cursor: pointer;
+    cursor: pointer;
 }
 .company-buttons button:hover {
     background: #1d4ed8;
@@ -75,5 +75,4 @@ body {
     padding: 15px;
     border-radius: 6px;
     white-space: pre-wrap;
-    min-height: 30px;
 }

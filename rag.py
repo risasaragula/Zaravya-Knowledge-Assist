@@ -18,7 +18,6 @@ def answer_question(question):
 
     Zaravya Knowledge Document:
     {document}
-
     Question:
     {question}
 
