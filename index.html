@@ -2,13 +2,10 @@
 <html>
 <head>
     <title>Chatbot Assist</title>
-
     <link rel="stylesheet" href="/style.css">
-
 </head>
 <body>
     <div class="main-container">
-
         <div class="company-box">
             <h2>COMPANY</h2>
             <div class="company-buttons">
@@ -16,12 +13,17 @@
                 <button onclick="document.getElementById('file').click()">Upload</button>
                 <input type="file" id="file" accept=".pdf, .png, .jpg, .doc, .docx" onchange="uploadFile()">
             </div>
+            <div class="company-question">
+                <input id="company-question" placeholder="Ask about uploaded document..." onkeydown="handleCompanyEnter(event)">
+                <button class="ask-button" onclick="askCompany()">ASK</button>
+            </div>
+            <div id="company-answer"></div>
         </div>
 
         <div class="assist-box">
             <h1>Zaravya Assist</h1>
             <div class="question-area">
-                <input id="question" placeholder="Type your question..." onkeydown="handleEnter(event)">
+                <input id="question" placeholder="Ask about Zaravya..." onkeydown="handleEnter(event)">
                 <button class="ask-button" onclick="askQuestion()">ASK</button>
             </div>
             <div id="answer"></div>
@@ -29,6 +31,5 @@
     </div>
 
     <script src="/script.js"></script>
-
 </body>
 </html>

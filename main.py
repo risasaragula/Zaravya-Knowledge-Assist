@@ -4,49 +4,58 @@ import os
 import webbrowser
 
 app = Flask(__name__)
-
 uploaded_document = ""
 
 @app.route("/")
 def home():
     return send_file("index.html")
 
-
 @app.route("/style.css")
 def style():
     return send_file("style.css")
-
 
 @app.route("/script.js")
 def script():
     return send_file("script.js")
 
-
-@app.route("/ask", methods=["POST"])
-def ask():
+@app.route("/ask-zaravya", methods=["POST"])
+def ask_zaravya():
     try:
         data = request.get_json()
         question = data["question"].strip()
-
         if not question:
             return jsonify({
                 "error": "Please enter a question"
             }), 400
-
-        if uploaded_document:
-            answer = answer_from_uploaded_document(
-                question, uploaded_document
-            )
-        else:
-            answer = answer_question(question)
-
+        answer = answer_question(question)
         return jsonify({
             "answer": answer
         })
-
     except Exception as e:
         print("Error:", e)
+        return jsonify({
+            "error": str(e)
+        }), 500
 
+@app.route("/ask-company", methods=["POST"])
+def ask_company():
+    try:
+        data = request.get_json()
+        question = data["question"].strip()
+        if not question:
+            return jsonify({
+                "error": "Please enter a question"
+            }), 400
+        if not uploaded_document:
+            return jsonify({
+                "error": "Please upload a document first."
+            }), 400
+        answer = answer_from_uploaded_document(question, uploaded_document)
+        return jsonify({
+            "answer": answer
+        })
+    except Exception as e:
+        print("Error:", e)
         return jsonify({
             "error": str(e)
         }), 500
@@ -54,14 +63,11 @@ def ask():
 @app.route("/upload", methods=["POST"])
 def upload():
     global uploaded_document
-
     if "file" not in request.files:
         return jsonify({
             "error": "No file selected"
         }), 400
-
     file = request.files["file"]
-
     if file.filename == "":
         return jsonify({
             "error": "No file selected"
@@ -72,8 +78,10 @@ def upload():
     os.makedirs(upload_folder, exist_ok=True)
 
     file_path = os.path.join(
-        upload_folder, file.filename
+        upload_folder,
+        file.filename
     )
+
     file.save(file_path)
 
     uploaded_document = file_path
@@ -87,4 +95,5 @@ def upload():
 
 if __name__ == "__main__":
     webbrowser.open("http://127.0.0.1:5000")
-    app.run(debug=True, use_reloader=False)
+
+    app.run(debug=True,use_reloader=False)

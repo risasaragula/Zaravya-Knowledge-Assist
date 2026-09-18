@@ -9,7 +9,7 @@ body {
 }
 .company-box {
     background: white;
-    padding: 25px;
+    padding: 30px;
     border-radius: 10px;
     box-shadow: 0 3px 10px #ccc;
     margin-bottom: 25px;
@@ -20,6 +20,7 @@ body {
 }
 .company-buttons {
     text-align: left;
+    margin-bottom: 25px;
 }
 .company-buttons button {
     padding: 10px 20px;
@@ -35,6 +36,25 @@ body {
 }
 #file {
     display: none;
+}
+.company-question {
+    display: flex;
+    gap: 10px;
+}
+#company-question {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+#company-answer {
+    margin-top: 25px;
+    text-align: left;
+    background: #f4f6f8;
+    padding: 15px;
+    border-radius: 6px;
+    white-space: pre-wrap;
 }
 .assist-box {
     background: white;
@@ -63,7 +83,7 @@ body {
     color: white;
     border: none;
     border-radius: 6px;
-   cursor: pointer;
+    cursor: pointer;
 }
 .ask-button:hover {
     background: #1d4ed8;
