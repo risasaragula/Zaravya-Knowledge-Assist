@@ -12,7 +12,7 @@ with open("zaravya.txt", "r", encoding="utf-8") as file:
     document = file.read()
 
 def split_document(text):
-    words = text.split
+    words = text.split()
     chunks = []
     for i in range(0, len(words), 300):
         chunk = " ".join(words[i:i + 300])
