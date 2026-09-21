@@ -38,7 +38,7 @@ def find_similar_text(question):
     results = []
     for index in best_indexes:
         results.append(chunks[index])
-        return results
+    return results
     
 def answer_question(question):
     relevant_text = find_similar_text(question)

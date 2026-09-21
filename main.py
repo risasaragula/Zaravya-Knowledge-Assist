@@ -10,6 +10,10 @@ uploaded_document = ""
 def home():
     return send_file("index.html")
 
+@app.route("/template")
+def template():
+    return send_file("company_policy_template.html")
+
 @app.route("/style.css")
 def style():
     return send_file("style.css")

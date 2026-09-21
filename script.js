@@ -72,7 +72,7 @@ function handleCompanyEnter(event) {
 }
 
 function openTemplate() {
-    alert("Template feature will be added here soon.");
+    window.open("/template", "_blank");
 }
 
 async function uploadFile() {
