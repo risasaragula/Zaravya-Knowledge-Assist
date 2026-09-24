@@ -98,6 +98,7 @@ def upload():
     })
 
 if __name__ == "__main__":
-    webbrowser.open("http://127.0.0.1:5000")
-
-    app.run(debug=True,use_reloader=False)
+    chrome_path = "C:/Program Files/Google/Chrome/Application/chrome.exe"
+    webbrowser.register("chrome", None, webbrowser.BackgroundBrowser(chrome_path))
+    webbrowser.get("chrome").open("http://127.0.0.1:5000")
+    app.run(debug=True, use_reloader=False)
