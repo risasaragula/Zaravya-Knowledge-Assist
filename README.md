@@ -45,3 +45,12 @@ Zaravya-Knowledge-Assist/
 ├── zaravya.txt
 ├── requirements.txt
 └── .gitignore
+
+
+## Example Questions
+- What is POS?
+- What is KOT?
+- What does ChefDesk do?
+- What is inventory management?
+- What is CRM?
+- What integrations does Zaravya support?
