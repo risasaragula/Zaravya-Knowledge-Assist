@@ -54,3 +54,21 @@ Zaravya-Knowledge-Assist/
 - What is inventory management?
 - What is CRM?
 - What integrations does Zaravya support?
+
+## How to Run
+
+Install the required packages:
+
+    pip install -r requirements.txt
+
+Create a `.env` file and add your Gemini API key:
+
+    GEMINI_API_KEY=your_api_key_here
+
+Then run:
+
+    python main.py
+
+## Author
+
+Risa Saragula
