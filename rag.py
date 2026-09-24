@@ -55,7 +55,7 @@ Question:
 {question}
 Answer:
 """
-    response = client.models.generate_content(model="gemini-3.6-flash", contents=prompt)
+    response = client.models.generate_content(model="gemini-3.5-flash", contents=prompt)
     return response.text
 
 def answer_from_uploaded_document(question, document_path):
