@@ -1,98 +1,652 @@
+/* =========================================
+   GLOBAL
+========================================= */
+
+* {
+    box-sizing: border-box;
+}
+
 body {
-    font-family: sans-serif;
-    background: #f9f6f0;
-    padding: 50px;
+    margin: 0;
+    padding: 0;
+
+    font-family:
+        Inter,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Arial,
+        sans-serif;
+
+    background: #f7f8fc;
+
+    color: #1f2937;
+
+    min-height: 100vh;
 }
+
+
+/* =========================================
+   MAIN CONTAINER
+========================================= */
+
 .main-container {
-    width: 700px;
-    margin: auto;
+    width: 720px;
+
+    max-width: calc(100% - 32px);
+
+    margin: 55px auto;
 }
-.company-box {
-    background: white;
+
+
+/* =========================================
+   COMPANY + ASSIST BOXES
+========================================= */
+
+.company-box,
+.assist-box {
+    background: #ffffff;
+
+    border: 1px solid #e6e9ef;
+
+    border-radius: 16px;
+
     padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 3px 10px #ccc;
-    margin-bottom: 25px;
+
+    box-shadow:
+        0 8px 25px rgba(15, 23, 42, 0.06);
 }
-.company-box h2 {
-    margin-top: 0;
-    margin-bottom: 20px;
+
+
+/* Space between the two sections */
+
+.company-box {
+    margin-bottom: 24px;
 }
+
+
+/* =========================================
+   SECTION HEADER
+========================================= */
+
+.section-header {
+    display: flex;
+
+    align-items: flex-start;
+
+    justify-content: space-between;
+
+    margin-bottom: 8px;
+}
+
+
+.section-label {
+    display: block;
+
+    margin-bottom: 6px;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.3px;
+
+    color: #2563eb;
+}
+
+
+.company-box h2,
+.assist-box h1 {
+    margin: 0;
+
+    font-size: 24px;
+
+    line-height: 1.25;
+
+    color: #111827;
+
+    font-weight: 700;
+}
+
+
+.section-description {
+    margin: 0 0 25px;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+
+    color: #7b8494;
+}
+
+
+/* =========================================
+   COMPANY BUTTONS
+========================================= */
+
 .company-buttons {
-    text-align: left;
-    margin-bottom: 25px;
+    display: flex;
+
+    gap: 10px;
+
+    margin-bottom: 8px;
 }
-.company-buttons button {
-    padding: 10px 20px;
-    margin-right: 8px;
-    background: #2563eb;
-    color: white;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-}
-.company-buttons button:hover {
-    background: #1d4ed8;
-}
+
+
 #file {
     display: none;
 }
-.company-question {
-    display: flex;
-    gap: 10px;
+
+
+.secondary-button,
+.outline-button {
+    height: 40px;
+
+    padding: 0 17px;
+
+    border-radius: 8px;
+
+    font-family: inherit;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        border-color 0.2s ease,
+        color 0.2s ease,
+        transform 0.1s ease;
 }
-#company-question {
-    flex: 1;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 15px;
+
+
+.secondary-button {
+    border: 1px solid #2563eb;
+
+    background: #2563eb;
+
+    color: #ffffff;
 }
-#company-answer {
-    margin-top: 25px;
-    text-align: left;
-    background: #f4f6f8;
-    padding: 15px;
-    border-radius: 6px;
-    white-space: pre-wrap;
+
+
+.secondary-button:hover {
+    background: #1d4ed8;
+
+    border-color: #1d4ed8;
 }
-.assist-box {
-    background: white;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 3px 10px #ccc;
+
+
+.outline-button {
+    border: 1px solid #d5dae3;
+
+    background: #ffffff;
+
+    color: #374151;
 }
-.assist-box h1 {
-    margin-top: 0;
-    margin-bottom: 25px;
+
+
+.outline-button:hover {
+    border-color: #2563eb;
+
+    color: #2563eb;
+
+    background: #f8faff;
 }
+
+
+.secondary-button:active,
+.outline-button:active {
+    transform: scale(0.98);
+}
+
+
+/* =========================================
+   UPLOAD STATUS
+========================================= */
+
+#upload-status {
+    min-height: 20px;
+
+    margin: 7px 0 19px;
+
+    font-size: 12px;
+
+    color: #6b7280;
+}
+
+
+/* =========================================
+   QUESTION LABEL
+========================================= */
+
+.question-label {
+    margin-bottom: 8px;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    color: #4b5563;
+}
+
+
+/* =========================================
+   QUESTION AREAS
+========================================= */
+
+.company-question,
 .question-area {
     display: flex;
-    gap: 10px;
+
+    align-items: stretch;
+
+    gap: 9px;
 }
+
+
+#company-question,
 #question {
     flex: 1;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 15px;
+
+    min-width: 0;
+
+    height: 48px;
+
+    padding: 0 15px;
+
+    border: 1px solid #d7dce5;
+
+    border-radius: 9px;
+
+    outline: none;
+
+    background: #ffffff;
+
+    color: #1f2937;
+
+    font-family: inherit;
+
+    font-size: 14px;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
 }
+
+
+#company-question::placeholder,
+#question::placeholder {
+    color: #a0a7b4;
+}
+
+
+#company-question:focus,
+#question:focus {
+    border-color: #2563eb;
+
+    box-shadow:
+        0 0 0 3px rgba(37, 99, 235, 0.09);
+}
+
+
+/* =========================================
+   ASK BUTTON
+========================================= */
+
 .ask-button {
-    padding: 12px 20px;
-    background: #2563eb;
-    color: white;
+    height: 48px;
+
+    min-width: 75px;
+
+    padding: 0 18px;
+
     border: none;
-    border-radius: 6px;
+
+    border-radius: 9px;
+
+    background: #2563eb;
+
+    color: #ffffff;
+
+    font-family: inherit;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.4px;
+
     cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        transform 0.1s ease;
 }
+
+
 .ask-button:hover {
     background: #1d4ed8;
 }
+
+
+.ask-button:active {
+    transform: scale(0.98);
+}
+
+
+/* =========================================
+   ANSWER BOX
+========================================= */
+
+#company-answer,
 #answer {
-    margin-top: 25px;
-    text-align: left;
-    background: #f4f6f8;
-    padding: 15px;
-    border-radius: 6px;
+    display: none;
+
+    margin-top: 18px;
+
+    padding: 17px;
+
+    min-height: 50px;
+
+    border: 1px solid #e4e7ec;
+
+    border-radius: 9px;
+
+    background: #f8fafc;
+
+    color: #374151;
+
+    font-size: 14px;
+
+    line-height: 1.65;
+
     white-space: pre-wrap;
+
+    text-align: left;
+}
+
+
+/* =========================================
+   TEMPLATE POPUP
+========================================= */
+
+.template-modal {
+    display: none;
+
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 1000;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 25px;
+
+    background: rgba(15, 23, 42, 0.62);
+
+    backdrop-filter: blur(4px);
+}
+
+
+/* =========================================
+   TEMPLATE MODAL CONTAINER
+========================================= */
+
+.template-modal-content {
+    position: relative;
+
+    width: 850px;
+
+    max-width: 100%;
+
+    height: 90vh;
+
+    background: #ffffff;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    display: flex;
+
+    flex-direction: column;
+
+    box-shadow:
+        0 25px 70px rgba(0, 0, 0, 0.25);
+}
+
+
+/* =========================================
+   TEMPLATE MODAL HEADER
+========================================= */
+
+.template-modal-header {
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: flex-start;
+
+    justify-content: space-between;
+
+    padding: 20px 25px;
+
+    border-bottom: 1px solid #e7e9ee;
+
+    background: #ffffff;
+}
+
+
+.template-modal-header h2 {
+    margin: 3px 0 3px;
+
+    font-size: 20px;
+
+    color: #111827;
+}
+
+
+.template-modal-header p {
+    margin: 0;
+
+    color: #7b8494;
+
+    font-size: 12px;
+}
+
+
+/* =========================================
+   CLOSE BUTTON
+========================================= */
+
+.close-template {
+    flex-shrink: 0;
+
+    width: 34px;
+
+    height: 34px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #f3f4f6;
+
+    color: #6b7280;
+
+    font-size: 23px;
+
+    line-height: 30px;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease;
+}
+
+
+.close-template:hover {
+    background: #e5e7eb;
+
+    color: #111827;
+}
+
+
+/* =========================================
+   TEMPLATE IFRAME
+========================================= */
+
+#template-frame {
+    flex: 1;
+
+    width: 100%;
+
+    min-height: 0;
+
+    border: none;
+
+    background: #f5f5f5;
+}
+
+
+/* =========================================
+   TEMPLATE FOOTER
+========================================= */
+
+.template-modal-footer {
+    flex-shrink: 0;
+
+    display: flex;
+
+    justify-content: flex-end;
+
+    padding: 14px 25px;
+
+    border-top: 1px solid #e7e9ee;
+
+    background: #ffffff;
+}
+
+
+.download-template {
+    height: 42px;
+
+    padding: 0 20px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #2563eb;
+
+    color: #ffffff;
+
+    font-family: inherit;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        transform 0.1s ease;
+}
+
+
+.download-template:hover {
+    background: #1d4ed8;
+}
+
+
+.download-template:active {
+    transform: scale(0.98);
+}
+
+
+/* =========================================
+   SCROLLBAR
+========================================= */
+
+#template-frame {
+    scrollbar-width: thin;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .main-container {
+        max-width: calc(100% - 20px);
+
+        margin: 25px auto;
+    }
+
+
+    .company-box,
+    .assist-box {
+        padding: 22px;
+
+        border-radius: 13px;
+    }
+
+
+    .company-box h2,
+    .assist-box h1 {
+        font-size: 21px;
+    }
+
+
+    .company-buttons {
+        flex-wrap: wrap;
+    }
+
+
+    .company-question,
+    .question-area {
+        flex-direction: column;
+    }
+
+
+    .ask-button {
+        width: 100%;
+    }
+
+
+    .template-modal {
+        padding: 10px;
+    }
+
+
+    .template-modal-content {
+        height: 95vh;
+
+        border-radius: 12px;
+    }
+
+
+    .template-modal-header {
+        padding: 17px 18px;
+    }
+
+
+    .template-modal-footer {
+        padding: 12px 18px;
+    }
+
+
+    .download-template {
+        width: 100%;
+    }
+
 }

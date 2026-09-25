@@ -1,35 +1,218 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>Chatbot Assist</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Zaravya Assist</title>
+
     <link rel="stylesheet" href="/style.css">
 </head>
+
 <body>
+
     <div class="main-container">
+
+        <!-- ==============================
+             COMPANY POLICY
+        =============================== -->
+
         <div class="company-box">
-            <h2>Company Policy</h2>
+
+            <div class="section-header">
+
+                <div>
+                    <span class="section-label">DOCUMENT ASSISTANT</span>
+                    <h2>Company Policy</h2>
+                </div>
+
+            </div>
+
+
+            <p class="section-description">
+                Upload a company policy document and ask questions about its contents.
+            </p>
+
+
             <div class="company-buttons">
-                <button onclick="openTemplate()">Template</button>
-                <button onclick="document.getElementById('file').click()">Upload</button>
-                <input type="file" id="file" accept=".pdf, .png, .jpg, .doc, .docx" onchange="uploadFile()">
+
+                <button
+                    class="secondary-button"
+                    onclick="document.getElementById('file').click()"
+                >
+                    Upload Document
+                </button>
+
+                <input
+                    type="file"
+                    id="file"
+                    accept=".pdf,.png,.jpg,.jpeg,.doc,.docx"
+                    onchange="uploadFile()"
+                >
+
+                <button
+                    class="outline-button"
+                    onclick="openTemplate()"
+                >
+                    View Template
+                </button>
+
             </div>
+
+
+            <div id="upload-status"></div>
+
+
+            <div class="question-label">
+                Ask about your document
+            </div>
+
+
             <div class="company-question">
-                <input id="company-question" placeholder="Ask about uploaded document..." onkeydown="handleCompanyEnter(event)">
-                <button class="ask-button" onclick="askCompany()">ASK</button>
+
+                <input
+                    id="company-question"
+                    placeholder="Ask a question about the uploaded document..."
+                    onkeydown="handleCompanyEnter(event)"
+                >
+
+                <button
+                    class="ask-button"
+                    onclick="askCompany()"
+                >
+                    ASK
+                </button>
+
             </div>
+
+
             <div id="company-answer"></div>
+
         </div>
+
+
+
+        <!-- ==============================
+             ZARAVYA ASSIST
+        =============================== -->
 
         <div class="assist-box">
-            <h1>Zaravya Assist</h1>
-            <div class="question-area">
-                <input id="question" placeholder="Ask about Zaravya..." onkeydown="handleEnter(event)">
-                <button class="ask-button" onclick="askQuestion()">ASK</button>
+
+            <div class="section-header">
+
+                <div>
+                    <span class="section-label">AI KNOWLEDGE ASSISTANT</span>
+                    <h1>Zaravya Assist</h1>
+                </div>
+
             </div>
+
+
+            <p class="section-description">
+                Ask questions and get answers from the available knowledge base.
+            </p>
+
+
+            <div class="question-label">
+                Ask Zaravya
+            </div>
+
+
+            <div class="question-area">
+
+                <input
+                    id="question"
+                    placeholder="Ask about Zaravya..."
+                    onkeydown="handleEnter(event)"
+                >
+
+                <button
+                    class="ask-button"
+                    onclick="askQuestion()"
+                >
+                    ASK
+                </button>
+
+            </div>
+
+
             <div id="answer"></div>
+
         </div>
+
     </div>
 
+
+
+    <!-- ==============================
+         TEMPLATE POPUP
+    =============================== -->
+
+    <div
+        id="template-modal"
+        class="template-modal"
+    >
+
+        <div class="template-modal-content">
+
+            <div class="template-modal-header">
+
+                <div>
+
+                    <span class="section-label">
+                        DOCUMENT TEMPLATE
+                    </span>
+
+                    <h2>Company Policy Template</h2>
+
+                    <p>
+                        Preview the template before downloading.
+                    </p>
+
+                </div>
+
+
+                <button
+                    class="close-template"
+                    onclick="closeTemplate()"
+                >
+                    ×
+                </button>
+
+            </div>
+
+
+            <!--
+                The separate company_policy_template.html
+                will be loaded here.
+            -->
+
+            <iframe
+                id="template-frame"
+                src=""
+                title="Company Policy Template"
+            ></iframe>
+
+
+            <div class="template-modal-footer">
+
+                <button
+                    class="download-template"
+                    onclick="downloadTemplate()"
+                >
+                    Download Template
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
     <script src="/script.js"></script>
+
 </body>
+
 </html>
